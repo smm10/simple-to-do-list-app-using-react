@@ -14,14 +14,15 @@ class App extends React.Component {
       text:"",
       items:[]
     }
-    this.items = []
+    
   }
 
   handleSubmit = (e)=>{
     e.preventDefault();
-    this.items.push(this.state.text);
-    this.setState({items:this.items});
-
+    this.setState(prev => ({
+      items: prev.items.concat(this.state.text)
+      
+  }));
 
 
     console.log("Items array:"+this.state.items);
@@ -38,12 +39,14 @@ class App extends React.Component {
   handleDelete = (index)=>{
     
 
-    console.log("delete clicked");
-    console.log(this.state.items);
+    //console.log("delete clicked");
+    //console.log(this.state.items);
     console.log(index);
 
-    this.setState({items:this.items.splice(index,1)});
-
+    this.setState(prev => ({
+      items: prev.items.splice(index,1)
+      
+  }));
 
   }
 
@@ -60,7 +63,7 @@ class App extends React.Component {
       <ul>
       {
         this.state.items.map((item,index)=>{
-          return <li key={index}>{item}<Button _handleDelete={this.handleDelete.bind(this,index)}>x</Button></li>
+        return <li key={index}>{(index+1)+"."}{item}<Button _handleDelete={this.handleDelete.bind(this,index)}>x</Button></li>
           
         })
       }
