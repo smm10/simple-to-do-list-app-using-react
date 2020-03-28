@@ -2,6 +2,7 @@ import React from 'react';
 
 import Button from './Button';
 
+
 import './App.css';
 
 class App extends React.Component {
@@ -34,7 +35,15 @@ class App extends React.Component {
 
   }
 
-  handleDelete = ()=>{
+  handleDelete = (index)=>{
+    
+
+    console.log("delete clicked");
+    console.log(this.state.items);
+    console.log(index);
+
+    this.setState({items:this.items.splice(index,1)});
+
 
   }
 
@@ -51,7 +60,7 @@ class App extends React.Component {
       <ul>
       {
         this.state.items.map((item,index)=>{
-          return <li key={index}>{item}<Button index={index} items={this.state.items}></Button></li>
+          return <li key={index}>{item}<Button _handleDelete={this.handleDelete.bind(this,index)}>x</Button></li>
           
         })
       }

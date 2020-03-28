@@ -13,20 +13,9 @@ class Button extends React.Component {
 
   }
 
-  handleDelete = ()=>{
-
-
-    this.props.items.splice(this.props.index, 1);
-    console.log("delete button clicked");
-
-    console.log(this.props.items);
-    
-
-
-  }
 
 render(){
-    return <button onClick={this.handleDelete}>x</button>
+    return <button onClick={this.props._handleDelete}>x</button>
 }
 
 
