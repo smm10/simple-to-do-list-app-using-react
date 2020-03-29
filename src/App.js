@@ -38,13 +38,19 @@ class App extends React.Component {
 
   handleDelete = (index)=>{
     
+    let itemsClone = [...this.state.items];
+    itemsClone.splice(index,1);
+
+
+
 
     //console.log("delete clicked");
     //console.log(this.state.items);
     console.log(index);
+    console.log(itemsClone);
 
     this.setState(prev => ({
-      items: prev.items.splice(index,1)
+      items: itemsClone
       
   }));
 
@@ -63,7 +69,7 @@ class App extends React.Component {
       <ul>
       {
         this.state.items.map((item,index)=>{
-        return <li key={index}>{(index+1)+"."}{item}<Button _handleDelete={this.handleDelete.bind(this,index)}>x</Button></li>
+        return <li key={index}>{(index+1)+"."}{item}<Button id={index} _handleDelete={this.handleDelete}>x</Button></li>
           
         })
       }

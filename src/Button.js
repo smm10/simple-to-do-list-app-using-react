@@ -13,9 +13,10 @@ class Button extends React.Component {
 
   }
 
+  
 
 render(){
-    return <button onClick={this.props._handleDelete}>x</button>
+    return <button onClick={()=>{this.props._handleDelete(this.props.id)}}>x</button>
 }
 
 
