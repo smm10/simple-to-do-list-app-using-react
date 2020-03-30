@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/simple-to-do-list-app-using-react/static/css/main.1571b7df.chunk.css",
+    "main.js": "/simple-to-do-list-app-using-react/static/js/main.731ca812.chunk.js",
+    "main.js.map": "/simple-to-do-list-app-using-react/static/js/main.731ca812.chunk.js.map",
+    "runtime-main.js": "/simple-to-do-list-app-using-react/static/js/runtime-main.8007f7ad.js",
+    "runtime-main.js.map": "/simple-to-do-list-app-using-react/static/js/runtime-main.8007f7ad.js.map",
+    "static/js/2.ca21cde3.chunk.js": "/simple-to-do-list-app-using-react/static/js/2.ca21cde3.chunk.js",
+    "static/js/2.ca21cde3.chunk.js.map": "/simple-to-do-list-app-using-react/static/js/2.ca21cde3.chunk.js.map",
+    "index.html": "/simple-to-do-list-app-using-react/index.html",
+    "precache-manifest.e06b4848dd509d17ada97755c3ee39ef.js": "/simple-to-do-list-app-using-react/precache-manifest.e06b4848dd509d17ada97755c3ee39ef.js",
+    "service-worker.js": "/simple-to-do-list-app-using-react/service-worker.js",
+    "static/css/main.1571b7df.chunk.css.map": "/simple-to-do-list-app-using-react/static/css/main.1571b7df.chunk.css.map",
+    "static/js/2.ca21cde3.chunk.js.LICENSE.txt": "/simple-to-do-list-app-using-react/static/js/2.ca21cde3.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8007f7ad.js",
+    "static/js/2.ca21cde3.chunk.js",
+    "static/css/main.1571b7df.chunk.css",
+    "static/js/main.731ca812.chunk.js"
+  ]
+}
